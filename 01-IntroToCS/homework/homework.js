@@ -2,25 +2,26 @@
 
 function BinarioADecimal(num) {
   // tu codigo aca
-  let dec = 0
-  let suma;
-  let str
-  str = num.toString()
-  let binarios = str.split('')
-  let binariosR = binarios.reverse()
+
+  let suma = 0
+  let binarios = num.split('')
+  binarios = binarios.reverse()
   for(let i = 0; i < binarios.length; i++){
-    suma = binariosR[i] * Math.pow(2, i)
-    dec = dec + suma
+    suma = suma + binarios[i] * Math.pow(2, i)
   }
-  return dec
+
+  return suma
+
 }
 
 function DecimalABinario(num) {
   // tu codigo aca
+
   let bin = []
   let resto = 0
-  for(let i = 0;  i < 99; i++){
 
+  for(let i = 0;  i < 99; i++){
+    
     resto = num % 2
     bin.unshift(resto)
     num = num/2
@@ -29,6 +30,7 @@ function DecimalABinario(num) {
       break;
     }
   }
+
   return bin.join("")
 }
 
