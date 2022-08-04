@@ -18,14 +18,10 @@ function DecimalABinario(num) {
   // tu codigo aca
 
   let bin = []
-  let resto = 0
-  //let x = num
 
   while(num > 0){
-    resto = num % 2
-    bin.unshift(resto)
-    num = num / 2
-    num = Math.trunc(num)
+    bin.unshift(num%2)
+    num = Math.trunc(num/2)
   }
 
   return bin.join("")
