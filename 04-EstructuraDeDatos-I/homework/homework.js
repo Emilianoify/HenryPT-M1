@@ -15,8 +15,8 @@ Como ejercicio adicional y completamente opcional, al terminar de resolver este 
 */
 
 function nFactorial(n) {
-  if (n > 0 && n < 2) return 1
-  else if (n < 0) return 0
+  if (n < 2) return 1
+  else if (n === 2) return 2
   return n * nFactorial(n - 1)
 }
 
