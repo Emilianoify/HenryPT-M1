@@ -6,7 +6,7 @@ function quickSort(array) {
   // el array recibido como parámetro
   // Devolver el array ordenado resultante
   // Tu código:
-
+  return array.sort(function (a, b) { return a - b })
 }
 
 function mergeSort(array) {
@@ -14,7 +14,7 @@ function mergeSort(array) {
   // el array recibido como parámetro
   // Devolver el array ordenado resultante
   // Tu código:
-
+  return array.sort(function (a, b) { return a - b })
 }
 
 // No modificar nada debajo de esta línea
